@@ -88,7 +88,7 @@ $ git show 921a2ff
 ```
 #show the last commit
 ```
-$ git shoe HEAD
+$ git show HEAD
 ```
 #two steps before the last commit
 ```
@@ -98,3 +98,23 @@ $ git show HEAD~2
 ```
 $ git show HEAD:file1
 ```
+## 10. Unstaging files(undoing git add)
+```
+$ git restore --staged file1
+```
+## 11. discarding local changes
+#copies file1 from index to working directory
+```
+$ git restore file1
+```
+#restores multiple file
+```
+$ git file1 file2
+```
+#discard all local changes
+```
+$ git restore
+```
+#removes all untracked file
+```
+$ git clean -fd
