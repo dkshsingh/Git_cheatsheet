@@ -34,3 +34,24 @@ $ git status -s
 ```
 $ git -m "message"
 ```
+#opens the default editor to type a long message
+```
+$ git commit
+```
+## 4. Skipping the area
+```
+$ git commit -am "message"
+```
+## 5. removing the files
+#removes from working directory and staging area
+``` 
+$ git rm file1
+```
+#removes from staging area only
+```
+$ git rm --cached file1
+```
+## 6. Renaming or moving files
+```
+$ git mv file1.js file2.txt
+```
