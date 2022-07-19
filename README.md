@@ -55,3 +55,46 @@ $ git rm --cached file1
 ```
 $ git mv file1.js file2.txt
 ```
+## 7. Viewing the staged/unstaged changes
+#show unstaged changes
+```
+$ git diff
+```
+#show staged changes
+```
+$ git diff --staged
+```
+#same as the above
+```
+$ git diff --cached
+```
+## 8. Viewing the history
+#full history
+```
+$ git log
+```
+#summary
+```
+$ git log --oneline
+```
+#lists the commits from the oldest to newest
+```
+$ git log --reverse
+```
+## 9. viewing a commit
+#shows the given commit
+```
+$ git show 921a2ff
+```
+#show the last commit
+```
+$ git shoe HEAD
+```
+#two steps before the last commit
+```
+$ git show HEAD~2
+```
+#show the version of file1 sorted in the last commit
+```
+$ git show HEAD:file1
+```
