@@ -237,3 +237,16 @@ $ git tag
 ```
 $ git tag -d vl.0
 ```
+## 24. managing branches
+#creates a new branch called bugfix
+```
+$ git branch bugfix
+```
+#switches to the bugfix branch
+```
+$ git checkout bugfix
+```
+#same as the above
+```
+$ git switch bugfix
+```
