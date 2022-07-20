@@ -313,3 +313,22 @@ $ git merge --squash bugfix
 ```
 $ git merge --abort
 ```
+## 28. Viewing the merged branches
+#shows the merged branches
+```
+$ git branch --merged
+```
+#shows the unmerged branches
+```
+$ git branch --no-merged
+```
+## 29. Rebasing
+#changes the base of the current branch
+```
+$ git rebase master
+```
+## 30. Cherry picking
+#appilies the given commit on the current branch
+```
+$ git cherry-pick dad47ed
+```
