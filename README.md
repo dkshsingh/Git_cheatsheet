@@ -250,3 +250,66 @@ $ git checkout bugfix
 ```
 $ git switch bugfix
 ```
+#creates and switches
+```
+$ git switch -C bugfix
+```
+#deletes the bugfix branch
+```
+$ git branch -d bugfix
+```
+## 25. Comparing branches
+#lists the commits in the bugfix not in master
+```
+$ git log master ..bugfix
+```
+#shows the summary of changes
+```
+$ git diif master ..bugfix
+```
+## 26. Stashing 
+#creates a new stash
+```
+$ git stash push -m"New tax rules"
+```
+#list all the stashes
+```
+$ git stash list
+```
+#shows the given stash
+```
+$ git stash show satsh@{l}
+```
+#shorcut for stash@{l}
+```
+$ git stash show l
+```
+#applies the given stash to the working dir
+```
+$ git stash apply l
+```
+#deletes the given stash
+```
+$ git stash drop l
+```
+#deletes all the stashes
+```
+$ git stash clear
+```
+## 27. Merging 
+##merges the bugfix branch into the current branch
+```
+$ git merge bugfix
+```
+##creates a merge commit even if FF is possible
+```
+$ git merge --no-ff bugfix
+```
+#performs a squash merge
+```
+$ git merge --squash bugfix
+```
+#aborts the merge
+```
+$ git merge --abort
+```
